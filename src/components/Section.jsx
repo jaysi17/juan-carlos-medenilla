@@ -1,6 +1,13 @@
+import { useInView } from '../hooks/useInView'
+
 export default function Section({ id, title, eyebrow, children }) {
+  const [ref, inView] = useInView()
   return (
-    <section id={id} className="px-6 py-20 sm:py-24 scroll-mt-20">
+    <section
+      ref={ref}
+      id={id}
+      className={`px-6 py-20 sm:py-24 scroll-mt-20 reveal ${inView ? 'is-visible' : ''}`}
+    >
       <div className="max-w-5xl mx-auto">
         <div className="mb-10">
           {eyebrow && (

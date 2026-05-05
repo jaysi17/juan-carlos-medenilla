@@ -6,7 +6,7 @@ export default function Hero() {
       id="top"
       className="min-h-screen flex items-center px-6 pt-24 pb-16"
     >
-      <div className="max-w-5xl mx-auto w-full">
+      <div className="max-w-5xl mx-auto w-full hero-enter">
         <p className="text-sm font-medium text-accent mb-4">
           Hi, my name is
         </p>

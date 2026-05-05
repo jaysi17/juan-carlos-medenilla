@@ -1,8 +1,14 @@
 import { Mail } from 'lucide-react'
+import { useInView } from '../hooks/useInView'
 
 export default function Contact() {
+  const [ref, inView] = useInView()
   return (
-    <section id="contact" className="px-6 py-24 sm:py-32 scroll-mt-20">
+    <section
+      ref={ref}
+      id="contact"
+      className={`px-6 py-24 sm:py-32 scroll-mt-20 reveal ${inView ? 'is-visible' : ''}`}
+    >
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-sm font-medium text-accent mb-3">
           06. What's Next?
