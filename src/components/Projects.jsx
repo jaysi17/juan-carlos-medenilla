@@ -34,10 +34,20 @@ const PROJECTS = [
     image: null,
   },
   {
-    title: 'Airbnb Clone',
+    title: 'ThePillars Publication Website',
     year: '2025',
     description:
-      'A full-stack property listing and booking platform built end-to-end using the MERN stack. Implements secure user authentication with JSON Web Tokens and password hashing via bcrypt, plus image uploads for property listings handled by Multer middleware on the Express backend.',
+      'The official student publication website of Ateneo de Naga University (thepillarspub.com), serving the entire Atenean community across News, Editorial, Features, and Sports. I develop article pages and built the standings page for ADNU League 2025 intramurals coverage — with live updates and multiple standings formats: bracket-based win/loss tracking for ball sports and ranking-based displays for cheer and dance sports.',
+    tech: ['Nuxt.js', 'Vue.js', 'Tailwind CSS'],
+    github: null,
+    demo: null,
+    image: null,
+  },
+  {
+    title: 'StayConnect',
+    year: '2025',
+    description:
+      'A full-stack booking website built end-to-end on the MERN stack. Users can browse and book accommodations, with secure authentication via JSON Web Tokens, password hashing through bcrypt, and image uploads handled by Multer middleware on the Express backend.',
     tech: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Multer', 'bcrypt'],
     github: null,
     demo: null,
