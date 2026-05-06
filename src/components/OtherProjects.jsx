@@ -1,40 +1,54 @@
-import { Github, ExternalLink } from 'lucide-react'
 import Section from './Section'
 
 // TODO: Drop screenshots in `public/projects/` and replace `image: null`
-// with the path, e.g. `image: '/projects/shopteneo.png'`.
-// Also fill in `description`, `tech`, and `link` for each entry.
+// with the path. Also fill in `description` and `tech` for each entry.
 const OTHER_PROJECTS = [
+  {
+    title: 'Blog Site',
+    description:
+      "A commissioned full-stack blog for a fellow student's CSDC105 prefinals requirement. Clean dark-themed monospace UI for publishing, browsing, editing, and deleting blog posts with title, snippet, and body content.",
+    tech: ['React', 'Express', 'MongoDB'],
+    image: '/projects/blog-site.png',
+  },
+  {
+    title: 'Full-Stack Blog Platform',
+    description:
+      'A commissioned full-stack blog with user authentication, personal post management, a rich text editor with formatting, and Base64 cover image uploads stored in MongoDB. Built as a school project for a fellow student.',
+    tech: ['React', 'Express', 'MongoDB', 'JWT'],
+    image: '/projects/fullstack-blog-platform.png',
+  },
+  {
+    title: 'Chiikawa Parkour',
+    description:
+      'A commissioned 2D parkour platformer featuring the Chiikawa character. Players guide Chiikawa through floating sky platforms, collecting 5 stars while timing jumps carefully — clouds disappear when stepped on, risking a fall.',
+    tech: ['Unity', 'C#', '2D Pixel Art'],
+    image: '/projects/chiikawa.png',
+  },
+  {
+    title: "Potchi's Adventures",
+    description:
+      'A commissioned 2D platformer where players control Potchi, a cat navigating a cozy living room to collect fish before reaching the food bowl finish line. Features animated character states, heart-based lives, water hazards, and healing pickups.',
+    tech: ['Unity', 'C#', '2D Pixel Art'],
+    image: '/projects/potchis-adventures.png',
+  },
+  {
+    title: 'Rock Paper Scissor',
+    description:
+      'A simple web-based Rock, Paper, Scissors game where players compete against a CPU opponent with randomized moves. Built as the practical exam for the Frontend Developer position in ThePILLARS Publication Apprenticeship Qualifying Exam 2025.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    image: '/projects/rock-paper-scissor.png',
+  },
+  {
+    title: 'Weather App',
+    description:
+      'A clean, minimalist weather web app that lets users search for any city worldwide and view its current weather conditions in real time. Detailed metrics include feels-like temperature, humidity, wind speed, and pressure, plus a light/dark theme toggle.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'OpenWeatherMap API'],
+    image: null,
+  },
   {
     title: 'ShopTeneo',
     description: 'TODO: Add a short description.',
     tech: ['TODO'],
-    link: '#',
-    type: 'github',
-    image: null,
-  },
-  {
-    title: 'Weather App',
-    description: 'TODO: Add a short description.',
-    tech: ['TODO'],
-    link: '#',
-    type: 'github',
-    image: null,
-  },
-  {
-    title: 'CDSnapLab',
-    description: 'TODO: Add a short description.',
-    tech: ['TODO'],
-    link: '#',
-    type: 'github',
-    image: null,
-  },
-  {
-    title: 'Rock Paper Scissor',
-    description: 'TODO: Add a short description.',
-    tech: ['TODO'],
-    link: '#',
-    type: 'github',
     image: null,
   },
 ]
@@ -63,22 +77,7 @@ export default function OtherProjects() {
               )}
             </div>
             <div className="flex-1 flex flex-col p-5">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-accent text-xl">{'{ }'}</span>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${project.title} link`}
-                  className="text-muted hover:text-accent transition-colors"
-                >
-                  {project.type === 'demo' ? (
-                    <ExternalLink size={18} />
-                  ) : (
-                    <Github size={18} />
-                  )}
-                </a>
-              </div>
+              <span className="text-accent text-xl mb-3">{'{ }'}</span>
               <h3 className="text-base font-semibold text-fg group-hover:text-accent transition-colors">
                 {project.title}
               </h3>
