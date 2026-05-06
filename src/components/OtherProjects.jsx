@@ -43,7 +43,7 @@ const OTHER_PROJECTS = [
     description:
       'A clean, minimalist weather web app that lets users search for any city worldwide and view its current weather conditions in real time. Detailed metrics include feels-like temperature, humidity, wind speed, and pressure, plus a light/dark theme toggle.',
     tech: ['HTML', 'CSS', 'JavaScript', 'OpenWeatherMap API'],
-    image: null,
+    image: '/projects/weather-app.png',
   },
   {
     title: 'ShopTeneo',
@@ -65,15 +65,17 @@ export default function OtherProjects() {
             key={i}
             className="group flex flex-col rounded-lg border border-border bg-card overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:border-accent"
           >
-            <div className="aspect-video bg-bg border-b border-border flex items-center justify-center text-muted text-xs">
+            <div className="relative aspect-video bg-bg border-b border-border overflow-hidden">
               {project.image ? (
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               ) : (
-                'Screenshot here'
+                <div className="absolute inset-0 flex items-center justify-center text-muted text-xs">
+                  Screenshot here
+                </div>
               )}
             </div>
             <div className="flex-1 flex flex-col p-5">

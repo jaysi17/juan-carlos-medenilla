@@ -10,7 +10,7 @@ const PROJECTS = [
     tech: ['Unity', 'C#'],
     github: null,
     demo: 'https://youtu.be/Eb1hND5jAp8',
-    image: null,
+    image: '/projects/calamity-dash.png',
     badge: 'DOST National Finalist',
   },
   {
@@ -80,11 +80,17 @@ export default function Projects() {
 function ProjectCard({ title, year, description, tech, github, demo, image, badge }) {
   return (
     <article className="group relative flex flex-col rounded-lg border border-border bg-card overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:border-accent">
-      <div className="aspect-video bg-bg border-b border-border flex items-center justify-center text-muted text-sm">
+      <div className="relative aspect-video bg-bg border-b border-border overflow-hidden">
         {image ? (
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+          <img
+            src={image}
+            alt={title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         ) : (
-          'Screenshot here'
+          <div className="absolute inset-0 flex items-center justify-center text-muted text-sm">
+            Screenshot here
+          </div>
         )}
       </div>
       <div className="flex-1 flex flex-col p-5">

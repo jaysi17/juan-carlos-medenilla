@@ -34,7 +34,7 @@ export default function About() {
             <span className="text-fg">ICPC Asia-Manila Regional 2025</span>.
           </p>
           <p className="pt-2">
-            Mga technologies na ginagamit ko recently:
+            Technologies I recently used:
           </p>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
             {SKILLS.map((skill) => (
@@ -47,9 +47,12 @@ export default function About() {
         </div>
 
         <div className="md:col-span-1">
-          <div className="aspect-square rounded-lg bg-card border border-border flex items-center justify-center text-muted text-sm">
-            {/* TODO: replace with your photo */}
-            Your photo here
+          <div className="aspect-square rounded-lg overflow-hidden bg-card border border-border">
+            <img
+              src="/me/selfie.jpg"
+              alt="Juan Carlos Medenilla"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
         </div>
       </div>

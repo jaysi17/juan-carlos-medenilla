@@ -18,7 +18,10 @@ const ACHIEVEMENTS = [
     event: 'ADNU Software Festival 2025',
     detail: 'Calamity Dash',
     icon: Trophy,
-    images: [],
+    images: [
+      '/achievements/adnu-fest-1.jpg',
+      '/achievements/adnu-fest-2.jpg',
+    ],
     subawards: [
       'Best in Visual Design',
       'Best in Innovation',
@@ -32,7 +35,7 @@ const ACHIEVEMENTS = [
     event: 'DOST Level Up 2.0: Esports Game Dev Challenge',
     detail: 'Bicol Region Representative · Calamity Dash',
     icon: Medal,
-    images: [],
+    images: ['/achievements/dost.jpg'],
     subawards: [],
   },
   {
@@ -40,7 +43,10 @@ const ACHIEVEMENTS = [
     event: 'Ateneo Computer Programming Competition 2025',
     detail: null,
     icon: Award,
-    images: [],
+    images: [
+      '/achievements/acpc-1.jpg',
+      '/achievements/acpc-2.jpg',
+    ],
     subawards: [],
   },
   {
@@ -48,8 +54,19 @@ const ACHIEVEMENTS = [
     event: '2025 ICPC Asia-Manila Regional Contest',
     detail: 'Representing Ateneo de Naga University',
     icon: Star,
-    images: [],
+    images: [
+      '/achievements/icpc-2025-1.jpg',
+      '/achievements/icpc-2025.jpg',
+    ],
     subawards: [],
+  },
+  {
+    result: 'College Honor Awardee',
+    event: 'Ateneo de Naga University',
+    detail: 'AY 2024-2025',
+    icon: Award,
+    images: ['/achievements/honors-2024-2025.jpg'],
+    subawards: ['Second Honors', 'Third Honors'],
   },
 ]
 
