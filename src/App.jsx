@@ -8,6 +8,7 @@ import OtherProjects from './components/OtherProjects'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CursorSpotlight from './components/CursorSpotlight'
 
 function getInitialTheme() {
   if (typeof window === 'undefined') return 'light'
@@ -30,17 +31,20 @@ export default function App() {
 
   return (
     <div className="min-h-screen">
+      <CursorSpotlight />
       <Navbar theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <OtherProjects />
-        <Achievements />
-        <Contact />
-      </main>
-      <Footer />
+      <div className="relative z-10">
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <OtherProjects />
+          <Achievements />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   )
 }
