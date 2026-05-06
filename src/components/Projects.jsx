@@ -1,4 +1,4 @@
-import { Github, ExternalLink, Award } from 'lucide-react'
+import { Github, ExternalLink, Award, Youtube } from 'lucide-react'
 import Section from './Section'
 
 const PROJECTS = [
@@ -10,18 +10,21 @@ const PROJECTS = [
     tech: ['Unity', 'C#'],
     github: null,
     demo: 'https://youtu.be/Eb1hND5jAp8',
-    image: '/projects/calamity-dash.png',
-    badge: 'DOST National Finalist',
+    image: '/projects/calamity-dash.jpg',
+    badges: [
+      'ADNU Software Festival 2025 Champion',
+      'DOST National Finalist',
+    ],
   },
   {
     title: 'Ledg.it',
-    year: '2025',
+    year: '2026',
     description:
-      'A full-stack personal finance tracker that helps users monitor income and expenses, visualize spending patterns through interactive charts, and get AI-powered insights via a real-time Gemini-powered chatbot. Features email and Google OAuth authentication, custom typable categories, and an iOS-inspired dark theme UI.',
+      'A full-stack personal finance tracker, inspired by Tarsi by Bryl Lim, that helps users monitor income and expenses, visualize spending patterns through interactive charts, and get AI-powered insights via a real-time Gemini-powered chatbot. Features email and Google OAuth authentication, custom typable categories, and an iOS-inspired dark theme UI.',
     tech: ['Next.js 14', 'Supabase', 'Tailwind CSS', 'Chart.js', 'Gemini API'],
     github: null,
     demo: 'https://jaysi17-personal-finance-tracker.vercel.app/login',
-    image: '/projects/ledgit.png',
+    image: '/projects/ledgit.jpg',
   },
   {
     title: 'DMS Sinangag Website',
@@ -31,7 +34,7 @@ const PROJECTS = [
     tech: ['Astro', 'React', 'TypeScript', 'Tailwind CSS v4', 'shadcn/ui', 'Motion'],
     github: null,
     demo: 'https://dms-sinangag.netlify.app/',
-    image: '/projects/dms-sinangag.png',
+    image: '/projects/dms-sinangag.jpg',
   },
   {
     title: 'ThePillars Publication Website',
@@ -41,7 +44,7 @@ const PROJECTS = [
     tech: ['Nuxt.js', 'Vue.js', 'Tailwind CSS'],
     github: null,
     demo: 'https://thepillarspub.com',
-    image: '/projects/thepillars-publication.png',
+    image: '/projects/thepillars-publication.jpg',
   },
   {
     title: 'StayConnect',
@@ -51,17 +54,17 @@ const PROJECTS = [
     tech: ['React 19', 'Vite', 'Tailwind CSS', 'Express', 'MongoDB', 'JWT', 'Cloudinary'],
     github: null,
     demo: 'https://stay-connect-drab.vercel.app/',
-    image: '/projects/stayconnect.png',
+    image: '/projects/stayconnect.jpg',
   },
   {
     title: 'C&D SnapLab',
-    year: '2025',
+    year: '2026',
     description:
       "A web-based photobooth app I built for fun because I dream of having my own photobooth one day. Captures 4 sequential photos via the device's webcam and compiles them into a downloadable photostrip (PNG or PDF). Features a countdown timer with flash effects, multiple strip layouts (vertical, grid, framed), dark/light theme, and a fully responsive design — all client-side with no backend storage.",
     tech: ['React', 'Vite', 'Tailwind CSS', 'html2canvas', 'jsPDF'],
     github: null,
     demo: 'https://cd-snap-lab.vercel.app/',
-    image: '/projects/cdsnaplab.png',
+    image: '/projects/cdsnaplab.jpg',
   },
 ]
 
@@ -77,7 +80,8 @@ export default function Projects() {
   )
 }
 
-function ProjectCard({ title, year, description, tech, github, demo, image, badge }) {
+function ProjectCard({ title, year, description, tech, github, demo, image, badges }) {
+  const isYouTube = demo && /(?:youtube\.com|youtu\.be)/i.test(demo)
   return (
     <article className="group relative flex flex-col rounded-lg border border-border bg-card overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:border-accent">
       <div className="relative aspect-video bg-bg border-b border-border overflow-hidden">
@@ -102,11 +106,15 @@ function ProjectCard({ title, year, description, tech, github, demo, image, badg
             <span className="text-xs font-mono text-muted shrink-0 mt-1">{year}</span>
           )}
         </div>
-        {badge && (
-          <p className="mt-1 inline-flex items-center gap-1.5 text-xs text-accent">
-            <Award size={12} />
-            {badge}
-          </p>
+        {badges && badges.length > 0 && (
+          <div className="mt-1 space-y-0.5">
+            {badges.map((b) => (
+              <p key={b} className="flex items-center gap-1.5 text-xs text-accent">
+                <Award size={12} className="shrink-0" />
+                <span>{b}</span>
+              </p>
+            ))}
+          </div>
         )}
         <p className="mt-3 flex-1 text-sm text-muted leading-relaxed">
           {description}
@@ -135,10 +143,10 @@ function ProjectCard({ title, year, description, tech, github, demo, image, badg
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`${title} live demo`}
+              aria-label={isYouTube ? `${title} on YouTube` : `${title} live demo`}
               className="text-muted hover:text-accent transition-colors"
             >
-              <ExternalLink size={20} />
+              {isYouTube ? <Youtube size={20} /> : <ExternalLink size={20} />}
             </a>
           )}
         </div>

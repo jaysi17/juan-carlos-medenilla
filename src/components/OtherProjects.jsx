@@ -8,48 +8,42 @@ const OTHER_PROJECTS = [
     description:
       "A commissioned full-stack blog for a fellow student's CSDC105 prefinals requirement. Clean dark-themed monospace UI for publishing, browsing, editing, and deleting blog posts with title, snippet, and body content.",
     tech: ['React', 'Express', 'MongoDB'],
-    image: '/projects/blog-site.png',
+    image: '/projects/blog-site.jpg',
   },
   {
     title: 'Full-Stack Blog Platform',
     description:
       'A commissioned full-stack blog with user authentication, personal post management, a rich text editor with formatting, and Base64 cover image uploads stored in MongoDB. Built as a school project for a fellow student.',
     tech: ['React', 'Express', 'MongoDB', 'JWT'],
-    image: '/projects/fullstack-blog-platform.png',
+    image: '/projects/fullstack-blog-platform.jpg',
   },
   {
     title: 'Chiikawa Parkour',
     description:
       'A commissioned 2D parkour platformer featuring the Chiikawa character. Players guide Chiikawa through floating sky platforms, collecting 5 stars while timing jumps carefully — clouds disappear when stepped on, risking a fall.',
     tech: ['Unity', 'C#', '2D Pixel Art'],
-    image: '/projects/chiikawa.png',
+    image: '/projects/chiikawa.jpg',
   },
   {
     title: "Potchi's Adventures",
     description:
       'A commissioned 2D platformer where players control Potchi, a cat navigating a cozy living room to collect fish before reaching the food bowl finish line. Features animated character states, heart-based lives, water hazards, and healing pickups.',
     tech: ['Unity', 'C#', '2D Pixel Art'],
-    image: '/projects/potchis-adventures.png',
+    image: '/projects/potchis-adventures.jpg',
   },
   {
     title: 'Rock Paper Scissor',
     description:
       'A simple web-based Rock, Paper, Scissors game where players compete against a CPU opponent with randomized moves. Built as the practical exam for the Frontend Developer position in ThePILLARS Publication Apprenticeship Qualifying Exam 2025.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    image: '/projects/rock-paper-scissor.png',
+    image: '/projects/rock-paper-scissor.jpg',
   },
   {
     title: 'Weather App',
     description:
       'A clean, minimalist weather web app that lets users search for any city worldwide and view its current weather conditions in real time. Detailed metrics include feels-like temperature, humidity, wind speed, and pressure, plus a light/dark theme toggle.',
     tech: ['HTML', 'CSS', 'JavaScript', 'OpenWeatherMap API'],
-    image: '/projects/weather-app.png',
-  },
-  {
-    title: 'ShopTeneo',
-    description: 'TODO: Add a short description.',
-    tech: ['TODO'],
-    image: null,
+    image: '/projects/weather-app.jpg',
   },
 ]
 

@@ -1,4 +1,4 @@
-import { ArrowDown } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -18,7 +18,7 @@ export default function Hero() {
         </h2>
         <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted leading-relaxed">
           Computer Science student at Ateneo de Naga University, currently a
-          QA &amp; Software Developer Intern at AVA Data Solutions and a Web
+          QA &amp; Software Developer Intern at AVA Data Solutions Inc. and a Web
           Developer at ThePillars Publication. I build full-stack web apps,
           games, and small tools that solve real problems.
         </p>
@@ -35,6 +35,15 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-border text-fg font-medium hover:bg-card transition-colors"
           >
             Get in touch
+          </a>
+          <a
+            href="/resume/Medenilla_Juan_Carlos_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-border text-fg font-medium hover:bg-card transition-colors"
+          >
+            Resume
+            <Download size={16} />
           </a>
         </div>
       </div>

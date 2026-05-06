@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { href: '#other-projects', label: 'Other' },
   { href: '#achievements', label: 'Awards' },
   { href: '#contact', label: 'Contact' },
+  { href: '/resume/Medenilla_Juan_Carlos_Resume.pdf', label: 'Resume', external: true },
 ]
 
 export default function Navbar({ theme, onToggleTheme }) {
@@ -70,6 +71,8 @@ export default function Navbar({ theme, onToggleTheme }) {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noopener noreferrer' : undefined}
                     className="text-muted hover:text-fg transition-colors"
                   >
                     {link.label}
@@ -100,6 +103,8 @@ export default function Navbar({ theme, onToggleTheme }) {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    target={link.external ? '_blank' : undefined}
+                    rel={link.external ? 'noopener noreferrer' : undefined}
                     onClick={() => setMenuOpen(false)}
                     className="block py-1 text-muted hover:text-fg transition-colors"
                   >

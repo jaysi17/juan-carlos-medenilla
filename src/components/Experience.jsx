@@ -3,7 +3,7 @@ import Section from './Section'
 const EXPERIENCES = [
   {
     role: 'Quality Assurance & Software Developer Intern',
-    company: 'AVA Data Solutions',
+    company: 'AVA Data Solutions Inc.',
     location: 'Remote / Philippines',
     period: 'Apr 2026 — Present',
     bullets: [

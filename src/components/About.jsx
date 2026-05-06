@@ -22,7 +22,7 @@ export default function About() {
             Hi! I'm Juan Carlos — JC for short. I'm a Computer Science student
             at <span className="text-fg">Ateneo de Naga University</span> (BS
             CS '27), currently a QA &amp; Software Developer Intern at{' '}
-            <span className="text-fg">AVA Data Solutions</span> and a Web
+            <span className="text-fg">AVA Data Solutions Inc.</span> and a Web
             Developer at{' '}
             <span className="text-fg">ThePillars Publication</span>.
           </p>
@@ -31,7 +31,10 @@ export default function About() {
             and the Vue/Nuxt ecosystem, and I dabble in Unity game development
             on the side. Outside of building, I do competitive programming —
             I represented Ateneo de Naga at the{' '}
-            <span className="text-fg">ICPC Asia-Manila Regional 2025</span>.
+            <span className="text-fg">
+              International Collegiate Programming Contest Asia-Manila Regional 2025
+            </span>
+            .
           </p>
           <p className="pt-2">
             Technologies I recently used:

@@ -1,14 +1,13 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 
-// TODO: Replace the # placeholders with your actual GitHub and LinkedIn URLs.
 const SOCIALS = [
   {
-    href: '#',
+    href: 'https://github.com/jaysi17',
     label: 'GitHub',
     icon: Github,
   },
   {
-    href: '#',
+    href: 'https://www.linkedin.com/in/juan-carlos-medenilla-a1a296298',
     label: 'LinkedIn',
     icon: Linkedin,
   },
@@ -38,7 +37,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-sm text-muted">
-          Built with React &amp; Tailwind &middot; &copy; {new Date().getFullYear()} Juan Carlos Medenilla
+          &copy; {new Date().getFullYear()} Juan Carlos Medenilla
         </p>
       </div>
     </footer>
