@@ -19,7 +19,7 @@ export default function Hero() {
         <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted leading-relaxed">
           4th-year Computer Science student at Ateneo de Naga University and a
           Software Developer at AVA Data Solutions Inc., working on POS, ERP,
-          and payroll systems that businesses use every day.
+          and SaaS platforms that businesses use every day.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <a
