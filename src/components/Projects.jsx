@@ -28,7 +28,7 @@ const PROJECTS = [
     tech: ['JavaScript', 'Supabase', 'PostgreSQL', 'QR Ph payments', 'PWA', 'Playwright'],
     demo: 'https://www.daetkitchen.com',
     image: '/projects/daet-kitchen.jpg',
-    imageNote: 'Demo data',
+    imageNote: 'Kitchen display: demo data',
   },
   {
     title: 'QUEBO Cafe',
