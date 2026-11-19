@@ -14,13 +14,12 @@ export default function Hero() {
           Juan Carlos Medenilla.
         </h1>
         <h2 className="mt-3 text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-muted">
-          I build things for the web.
+          I build software for real-world operations.
         </h2>
         <p className="mt-6 max-w-2xl text-base sm:text-lg text-muted leading-relaxed">
-          Computer Science student at Ateneo de Naga University, currently a
-          QA &amp; Software Developer Intern at AVA Data Solutions Inc. and a Web
-          Developer at ThePillars Publication. I build full-stack web apps,
-          games, and small tools that solve real problems.
+          4th-year Computer Science student at Ateneo de Naga University and a
+          Software Developer at AVA Data Solutions Inc., working on POS, ERP,
+          and payroll systems that businesses use every day.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <a
