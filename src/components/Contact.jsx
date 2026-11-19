@@ -17,7 +17,7 @@ export default function Contact() {
           Get In Touch
         </h2>
         <p className="mt-6 text-muted leading-relaxed">
-          I'm always open to new opportunities, internships, and interesting
+          I'm always open to new opportunities, freelance projects, and interesting
           collaborations. Whether you have a question, a project idea, or just
           want to say hi — my inbox is open.
         </p>
