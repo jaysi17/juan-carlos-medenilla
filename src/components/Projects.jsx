@@ -45,7 +45,7 @@ const PROJECTS = [
     tech: ['JavaScript', 'Supabase', 'PostgreSQL', 'Deno Edge Functions', 'QR Ph payments', 'PWA'],
     demo: 'https://quebo.cafe',
     image: '/projects/quebo-cafe.jpg',
-    imageNote: 'Demo data',
+    imageNote: 'Customer ordering page',
   },
   {
     title: 'Daet Massage & Spa ERP',
